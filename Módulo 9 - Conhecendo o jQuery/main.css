@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(230, 230, 230);
+}
+
+.container{
+    padding-top: 100px;
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+input{
+    max-width: 400px;
+    background-color: white;
+}
+
+button{
+    background-color: darkgreen;
+    color: white;
+}
+
+input, button{
+    height: 30px;
+    padding: 5px;
+}
+
+.tabelaTarefas{
+    padding: 20px;
+    margin: 10px;
+    font-size: 20px;
+    background-color: white;
+    padding-left: 30px;
+    border-color: black;
+    border-radius: 10px;
+    border: solid;
+}
+
+li{
+    cursor: pointer;
+    background-color: white;
+}
