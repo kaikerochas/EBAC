@@ -1,0 +1,4 @@
+function calculaArea(base, altura){
+    let resultado = base * altura
+    return ("a área é " + resultado)
+}
