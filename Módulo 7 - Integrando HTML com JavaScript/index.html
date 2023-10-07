@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: 0 auto;
+            padding-top: 100px;
+            max-width: 700px;
+            width: 100%;
+        }
+
+        input{
+            max-width: 40px;
+        }
+        form{
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Exercício Módulo 7</h1>
+        <br>
+        <form id="form-validacao">
+            <label for="campoA">Digite o primeiro número:</label>
+            <input type="number" id="campoA">
+            <label for="campoB">Digite o segundo número:</label>
+            <input type="number" id="campoB">
+            <button type="submit">VALIDAR</button>
+        </form>
+    </div>
+    <script>
+        const form = document.getElementById("form-validacao");
+
+        form.addEventListener("submit", function(e){
+            const numero1 = document.getElementById("campoA").value;
+            const numero2 = document.getElementById("campoB").value;
+
+            if(numero2 > numero1){
+                alert("O número " + numero2 + " é maior do que o número " + numero1 + ".")
+            }else if(numero2 < numero1){
+                alert("O número " + numero2 + " não é maior do que o número " + numero1 + ".")
+            }else{
+                alert("Os números " + numero1 + " e " + numero2 + " são iguais.")
+            }
+        });
+    </script>
+</body>
+</html>
